@@ -114,7 +114,7 @@ smartfleet-ai/
 ## Clone Repository
 
 ```bash id="2dcnx9"
-git clone <repository-url>
+git clone https://github.com/J4HN4V1/smartfleet-ai
 ```
 
 ---
