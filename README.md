@@ -20,10 +20,14 @@ AI-powered logistics workflow platform built using MERN stack.
 
 ## Run Backend
 cd server
+
 npm install
+
 npm run server
 
 ## Run Frontend
 cd client
+
 npm install
+
 npm run dev
