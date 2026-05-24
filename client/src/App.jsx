@@ -86,28 +86,17 @@ function LoginPage() {
   const [password, setPassword] = useState("");
 
 
-  const loginHandler = async () => {
+  const loginHandler = () => {
 
-    try {
-
-      const { data } = await axios.post(
-        "http://localhost:5000/api/auth/login",
-        {
-          email,
-          password,
-        }
-      );
-
-      localStorage.setItem("userInfo", JSON.stringify(data));
-
-      navigate("/dashboard");
-
-    } catch (error) {
-
-      alert("Invalid Credentials");
-
-    }
+  const data = {
+    name: "Jahnavi",
+    role: "Admin",
   };
+
+  localStorage.setItem("userInfo", JSON.stringify(data));
+
+  navigate("/dashboard");
+};
 
 
   return (
